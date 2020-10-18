@@ -2,16 +2,6 @@ body {
     background: black;
 }
 
-.logo {
-    position: absolute;
-    max-width: 100px;;
-    max-height: 50px;
-    width: auto;
-    height: auto;
-    left: 0;
-    top: 0;
-}
-
 .icon {
     position: absolute;
     max-width: 40px;;
