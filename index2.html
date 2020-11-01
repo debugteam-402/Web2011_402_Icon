@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <title>Thiệp 20/11 - Debug Team</title>
+    <script>
+        $(document).ready(function() {
+            $("#earthMap").hide();
+        });
+    </script>
+</head>
+<style>
+    li:hover #NA{transform: scale(1.05);}
+    li:hover #SA{transform: scale(1.05);}
+    li:hover #EU{transform: scale(1.05);}
+    li:hover #ASI{transform: scale(1.05);}
+    li:hover #AUS{transform: scale(1.05);}
+    li:hover #AF{transform: scale(1.05);}
+</style>
+<body>
+    <div class="earth" id="xoay" style="display: flex; flex-wrap: wrap;"></div> 
+    <div class="earthMap" id="earthMap">
+        <ul>
+            <li>
+                <div class="NA" id="NA">
+                    <img src="Image/NA.png" alt="NorthAmerica" width="90%" style="cursor: pointer;z-index: 1; position: absolute; width: 620px; height: 436px;transform: rotate(-10deg); top: 20px; left: 40px;">
+                </div>
+            </li>
+            <li>
+                <div class="SA" id="SA">
+                    <img src="Image/SA.png" alt="SouthAmerica" width="90%" style="cursor: pointer;z-index: 1; position: absolute; width: 192px; height: 317px;; top: 435px; left: 360px;">
+                </div>
+            </li>
+            <li>
+                <div class="EU" id="EU">
+                    <img src="Image/EU.png" alt="Europe" width="90%" style="cursor: pointer;z-index: 1; position: absolute; width: 373px; height: 273px;transform: rotate(-2deg); top: 41px; left: 581px;">
+                </div>
+            </li>
+            <li>
+                <div class="ASI" id="ASI">
+                    <img src="Image/ASI.png" alt="Aisa" width="90%" style="cursor: pointer;z-index: 1; position: absolute;width: 650px; height: 500px;;transform: rotate(0deg); top: 38px; left: 780px;">
+                </div>
+            </li>
+            <li>
+                <div class="AUS" id="AUS">
+                    <img src="Image/AUS.png" alt="Ausralia" width="90%" style="cursor: pointer;z-index: 1; position: absolute; width: 260px; height: 230px;transform: rotate(2deg); top: 500px; left: 1115px;">
+                </div>
+            </li>
+            <li>
+                <div class="AF" id="AF">
+                    <img src="Image/AF.png" alt="Africa" width="90%" style="cursor: pointer;z-index: 1; position: absolute; width: 280px; height: 365px; top: 285px; left: 615px;">
+                </div>
+            </li>
+            <li style="z-index: 2;" id="VN">
+                <div class="VN" >
+                    <img src="Image/VN.png" alt="VietNam" width="90%" style="cursor: pointer;z-index: 3; position: absolute; width: 80px; height: 80px; top: 375px; left: 1075px;">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/Albert Eistein.png" alt="Eistein" id="Eistein">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/ChuVanAn.png" alt="ChuVanAn" id="ChuVanAn">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/IsaacNewton.png" alt="IsaacNewton" id="IsaacNewton">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/NguyenBinhKhiem.png" alt="NguyenBinhKhiem" id="NguyenBinhKhiem">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/Pythagoras.png" alt="Pythagoras" id="Pythagoras">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/KhongTu.png" alt="KhongTu" id="KhongTu">
+    </div>
+    <div style="text-align: center;">
+        <img src="Image/sloganTDTU.png" alt="sloganTDTU" id="sloganTDTU">
+    </div>
+    
+</body>
+
+
+
+<script>
+$("#xoay").click(function() {
+    $("#xoay").remove();
+    $("#earthMap").show("slow", function() {
+        $("#earthMap").show("slow", function() {
+        });
+    });
+});
+
+$("#Eistein").hide()
+$('#NA').click(() => {
+    $("#Eistein").show();
+    $("#earthMap").hide();
+})
+$("#Eistein").click(() => {
+    $("#Eistein").hide();
+    $("#earthMap").show();
+})
+
+$("#ChuVanAn").hide()
+$('#AUS').click(() => {
+    $("#ChuVanAn").show();
+    $("#earthMap").hide();
+})
+$("#ChuVanAn").click(() => {
+    $("#ChuVanAn").hide();
+    $("#earthMap").show();
+})
+
+$("#IsaacNewton").hide()
+$('#SA').click(() => {
+    $("#IsaacNewton").show();
+    $("#earthMap").hide();
+})
+$("#IsaacNewton").click(() => {
+    $("#IsaacNewton").hide();
+    $("#earthMap").show();
+})
+
+$("#NguyenBinhKhiem").hide()
+$('#EU').click(() => {
+    $("#NguyenBinhKhiem").show();
+    $("#earthMap").hide();
+})
+$("#NguyenBinhKhiem").click(() => {
+    $("#NguyenBinhKhiem").hide();
+    $("#earthMap").show();
+})
+
+$("#Pythagoras").hide()
+$('#AF').click(() => {
+    $("#Pythagoras").show();
+    $("#earthMap").hide();
+})
+$("#Pythagoras").click(() => {
+    $("#Pythagoras").hide();
+    $("#earthMap").show();
+})
+
+$("#KhongTu").hide()
+$('#ASI').click(() => {
+    $("#KhongTu").show();
+    $("#earthMap").hide();
+})
+$("#KhongTu").click(() => {
+    $("#KhongTu").hide();
+    $("#earthMap").show();
+})
+
+$("#sloganTDTU").hide()
+$('#VN').click(() => {
+    $("#sloganTDTU").show();
+    $("#earthMap").hide();
+})
+$("#sloganTDTU").click(() => {
+    $("#sloganTDTU").hide();
+    $("#earthMap").show();
+})
+
+
+
+</script>
+
+
+
+<script>
+
+
+
+    // $("#popup1").hide();
+    // $(document).ready(() => {
+    // $(".active").click(() => {
+    //     $(".active").("active")
+    // })       
+    
+    // $("#hinh1").click(() => {
+    //     $("#popup1").show();
+    // })
+
+    // // $("#popup1").click(() => {
+    // //     $("#popup1").hide();
+    // // })
+
+    // $("#popup1").click(() => {
+    //     $("#popup1").hide();
+    //     $(".earth").addClass("active");
+    // })
+
+    // $(".earth").click(() => {
+    //     $(".earth").addClass("active");
+    // })
+    // })
+</script>
+</html>
